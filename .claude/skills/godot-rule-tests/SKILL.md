@@ -44,6 +44,8 @@ Non-zero exit code means failure. One file: add `-gselect=test_damage.gd`; one t
 
 CI runs the same command in the `test` job (Godot pinned to the exact version, installed as `godot` on PATH). Later jobs use `needs: test`.
 
+GUT exits 0 when a test script fails to parse or load (it only warns "Ignoring script"), so CI greps the log for `Ignoring script`, `SCRIPT ERROR`, `Parse Error` and `Failed to load script` and fails the step; copy that check into any new project's CI.
+
 If Godot cannot run locally (sandbox), push and read the Actions result for the job log; treat CI as the test runner.
 
 ## Red then green (required)
