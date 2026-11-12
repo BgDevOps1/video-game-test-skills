@@ -8,6 +8,8 @@
     }
   },
   "enabledPlugins": {
-    "agent-skills@addy-agent-skills": true
+    "agent-skills@addy-agent-skills": true,
+    "huggingface-skills@anthropic-plugin-directory": false,
+    "design@anthropic-plugin-directory": false
   }
 }
