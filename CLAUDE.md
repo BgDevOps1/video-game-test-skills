@@ -20,9 +20,10 @@ docs/superpowers/                design spec and implementation plan for the fir
 |---|---|
 | `godot-rule-tests` | Headless GUT unit tests for pure game logic in `rules/`, with a red-then-green check |
 | `godot-scene-tests` | Headless GUT tests for scenes and node scripts: physics stepping, multi-touch, layout at several aspect ratios, injected game time |
+| `godot-robot-players` | Scripted bots play the real main scene, stepped by hand, for whole-session tests and a balance report |
 | `web-screenshot-check` | Build the web export locally, screenshot it in headless Chromium at phone size, and look for missing or off-screen UI |
 
-More are planned as each method is first used: CI delivery of web and APK builds, robot players, play-test checklists and reports.
+More are planned as each method is first used: CI delivery of web and APK builds, play-test checklists.
 
 ## Writing a skill
 
